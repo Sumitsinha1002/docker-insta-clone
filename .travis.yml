@@ -1,0 +1,9 @@
+language: generic
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t sumitaec108/insta-clone .
+script:
+  - docker run -e CI=true sumitaec108/insta-clone npm run test -- --coverage
