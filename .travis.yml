@@ -7,3 +7,14 @@ before_install:
   - docker build -t sumitaec108/insta-clone .
 script:
   - docker run -e CI=true sumitaec108/insta-clone npm run test -- --coverage
+deploy:
+  provider: elasticbeanstalk
+  region: "eu-east-2"
+  name: "instaclone"
+  env: "Instaclone-env"
+  bucket_name: "elasticbeanstalk-us-east-2-906283353384"
+  bucket_path: "instaclone"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
