@@ -6,7 +6,7 @@ services:
 before_install:
   - docker build -t sumitaec108/insta-clone .
 script:
-  - docker run -e CI=true sumitaec108/insta-clone npm run test -- --coverage
+  - docker run -e CI=true sumitaec108/insta-clone npm run test
 deploy:
   provider: elasticbeanstalk
   region: "eu-east-2"
