@@ -10,8 +10,8 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: "us-east-2"
-  name: "instaclone"
-  env: "Instaclone-env--1"
+  name: "instaclone-react"
+  env: "Instaclonereact-env"
   bucket_name: "elasticbeanstalk-us-east-2-906283353384"
   bucket_path: "instaclone"
   on:
