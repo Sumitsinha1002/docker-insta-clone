@@ -10,10 +10,10 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: "us-east-2"
-  name: "instaclone-react"
+  app: "instaclone-react"
   env: "Instaclonereact-env"
   bucket_name: "elasticbeanstalk-us-east-2-906283353384"
-  bucket_path: "instaclone"
+  bucket_path: "instaclone-react"
   on:
     branch: main
   access_key_id: $AWS_ACCESS_KEY
