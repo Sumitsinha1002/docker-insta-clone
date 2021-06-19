@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t sumitaec108/insta-clone .
+  - docker build -t sumitaec108/insta-clone -f Dockerfile.dev .
 script:
   - docker run -e CI=true sumitaec108/insta-clone npm run test
 deploy:
