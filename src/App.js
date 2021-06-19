@@ -32,7 +32,7 @@ function App() {
   caption:"Nature!!!!"
 },
 {
-  username:"sumitsinha",
+  username:"sumitsinha7",
   imageURL:"https://cdn.pixabay.com/photo/2017/04/24/13/37/architecture-2256489_1280.jpg",
   caption:"WoooW!!"
 },
